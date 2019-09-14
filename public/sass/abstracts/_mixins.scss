@@ -1,0 +1,38 @@
+/*--- RESPONSIVE BREAK POINTS ---*/
+@mixin response($breakpoint) {
+    @if($breakpoint == xl) {
+        @media(max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == lg) {
+        @media(max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == md) {
+        @media(max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == sm) {
+        @media(max-width: 576px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == xs) {
+        @media(max-width: 375px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == ss) {
+        @media(max-width: 240px) {
+            @content;
+        }
+    }
+}

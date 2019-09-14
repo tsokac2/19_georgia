@@ -1,0 +1,112 @@
+/*-- Galery Cards--*/
+.gallery-a {
+    .cards-a-wrapper {
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+    }
+}
+.touch-photo {
+  font-family: $font-josefinSans;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
+  color: $color-secondary;
+}
+.card-a {
+    width: 33.3333%;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+    &:hover .card-a-overlay {
+        left: 0;
+    }
+    &-overlay {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: rgba($color-primary, .6);
+        color: $color-white;
+        z-index: 10;
+        @include flexLayout;
+        flex-direction: column;
+        @extend %fullSpace;
+      
+        transition: left .7s;
+
+        &-heading {
+            font-family: $font-nunito;
+            font-size: 50px;
+            @include textStyles(capitalize);
+
+            @media(max-width: 900px) {
+                font-size: 35px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 25px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
+            }
+        }
+
+        &-paragraph {
+            font-family: $font-josefinSans;
+            font-size: 30px;
+            margin-bottom: 30px;
+            @include textStyles(capitalize);
+
+            @media(max-width: 900px) {
+                font-size: 20px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 15px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
+            }
+        }
+
+        &-btn {
+            width: 150px;
+            height: 40px;
+            color: $color-primary;
+            background-color: $color-white;
+            font-family: $font-josefinSans;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid $color-primary;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+
+            @media(max-width: 900px) {
+                font-size: 12px;
+                width: 130px;
+                height: 30px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+
+            }
+        }
+    }
+
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: .5;
+    }
+}

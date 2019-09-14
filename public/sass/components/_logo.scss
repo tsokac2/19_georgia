@@ -1,0 +1,99 @@
+/*-- Logo --*/
+.wrap {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 12rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid $color-primary;
+  // @include response(lg) {
+  //   width: 8rem;
+  //   height: 8rem;
+  // }
+  // @include response(md) {
+  //   width: 8rem;
+  //   height: 8rem;
+  // }
+  @include response(xs) {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.logo {
+    font-size: 7rem;
+    color: $color-primary;
+    text-decoration: none;
+    @include flexLayout;
+    &:hover {
+      transition: .4s ease-in-out;
+      color: rgb(162, 125, 65);
+      text-decoration: none;
+    }
+    // @include response(lg) {
+    //   font-size: 4.5rem;
+    // }
+    // @include response(md) {
+    //   font-size: 4rem;
+    // }
+    @include response(xs) {
+      font-size: 2rem;
+    }
+}
+
+/*-- Small Versio - Reservation --*/
+.line-wrap {
+  padding-top: 3.5rem;
+  @include response(sm) {
+    padding-top: 5rem;
+  }
+  @include response(xs) {
+    padding-top: 6rem;
+  }
+
+  .line {
+    height: 1.5px;
+    background-color: $color-primary;
+  }
+}
+.wrap-res {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid $color-primary;
+  @include response(sm) {
+    margin-top: 2rem;
+  }
+  @include response(xs) {
+    margin-top: 3.5rem;
+  }
+
+  @include response(xs) {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.logo-res {
+    font-size: 3rem;
+    color: $color-primary;
+    text-decoration: none;
+    @include flexLayout;
+
+    &:hover {
+      transition: .4s ease-in-out;
+      color: rgb(162, 125, 65);
+      text-decoration: none;
+    }
+    @include response(xs) {
+      font-size: 2rem;
+    }
+}

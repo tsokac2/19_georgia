@@ -1,0 +1,54 @@
+.footer {
+  padding-top: 5rem;
+  .main-name {
+      font-family: $font-nunito;
+      font-size: 5rem;
+      padding-top: 2rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: $color-secondary;
+      @include response(lg) {
+        font-size: 4rem;
+        padding-top: 0;
+      }
+      @include response(md) {
+        font-size: 3rem;
+      }
+      @include response(sm) {
+        font-size: 2.5rem;
+      }
+  }
+  .sub-name {
+      font-family: $font-josefinSans;
+      font-size: 2.5rem;
+      color: $color-secondary;
+      font-weight: 300;
+      letter-spacing: 2px;
+      @include response(sm) {
+        font-size: 2rem;
+      }
+  }
+  .social-wrap {
+    margin: 4rem 0 4rem 0;
+    .social-media-link {
+      text-decoration: none;
+       font-size: 4rem;
+       color: $color-secondary;
+       transition: color .7s;
+       margin-right: 3rem;
+       &:hover {
+          color: $color-primary;
+        }
+    }
+  }
+  .copyright-paragraph {
+    font-family: $font-josefinSans;
+    font-size: 1.8rem;
+    color: $color-secondary;
+    @include textStyles(capitalize);
+    @include response(sm) {
+      font-size: 1.3rem;
+    }
+  }
+
+}

@@ -1,0 +1,55 @@
+/*-- About Us --*/
+.intro {
+  padding: 3rem 0 0rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.4);
+  .star {
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+    color: $color-primary;
+    @include response(xs) {
+      font-size: 1rem;
+    }
+  }
+
+  .about-heading {
+    font-family: $font-dancingScript;
+    font-size: 7rem;
+    font-weight: 300;
+    color: $color-primary;
+    @include response(xl) {
+      font-size: 6rem;
+    }
+    @include response(sm) {
+      font-size: 4rem;
+    }
+  }
+
+  .about-intro {
+    font-family: $font-josefinSans;
+    font-size: 3rem;
+    font-weight: 300;
+    color: $color-secondary;
+    margin-top: 3rem;
+
+    @include response(sm) {
+      font-size: 2rem;
+    }
+  }
+
+
+  .description {
+    font-family: $font-josefinSans;
+    font-size: 2rem;
+    font-style: italic;
+    color: $color-secondary;
+    text-align: justify;
+    @include response(lg) {
+      font-size: 1.8rem;
+    }
+
+    &::first-letter {
+        padding-left: 3rem;
+    }
+  }
+}

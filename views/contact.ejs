@@ -1,0 +1,74 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid">
+  <div class="col contact p-0">
+    <!-- Logo - lines - Home Link -->
+    <div class="row justify-content-center">
+      <div class="col-4 col-sm-3 line-wrap">
+          <div class="row justify-align-start">
+              <div class="col line"></div>
+          </div>
+      </div>
+
+      <div class="col-3 col-sm-2">
+        <div class="wrap-res">
+          <a href="/about" class="logo-res"><i class="fas fa-utensils details-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="col-4 col-sm-3 line-wrap">
+          <div class="row justify-align-start">
+              <div class="col line"></div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Reservation From -->
+    <div class="row justify-content-center">
+      <div class="col-10 col-sm-8 text-center heding">
+        <!-- Title -->
+        <div class="row justify-content-center">
+          <div class="col ">
+            <h2>Contact Us</h2>
+            <p>Got a question? We'd love to hear from you. Send us a message and we'll
+              respond as soon as possible.
+            </p>
+          </div>
+        </div>
+
+
+        <form class="mar-bottom" action="" method="">
+        <!-- Date and time -->
+        <div class="row justify-content-around res-date-time-wrap">
+          <div class="col-10 col-sm-8 p-0">
+            <div class="user-details">
+              <i class="fas fa-user icon"></i>
+               <input type="text" placeholder="Your name" name="usrnm">
+            </div>
+          </div>
+
+          <div class="col-10 col-sm-8 p-0 det-m">
+            <div class="user-details">
+              <i class="far fa-paper-plane icon"></i>
+               <input type="text" placeholder="Your email address" name="usrnm">
+            </div>
+          </div>
+
+          <div class="col-10 col-sm-8 p-0 det-m">
+            <div class="user-details">
+              <i class="far fa-comment-dots icon"></i>
+               <textarea rows="4" placeholder="Message" cols="50 name="message"></textarea>
+            </div>
+          </div>
+
+          <div class="col-10 col-sm-8 text-center">
+            <button type="button" name="button" class="res-btn">Send</button>
+          </div>
+
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

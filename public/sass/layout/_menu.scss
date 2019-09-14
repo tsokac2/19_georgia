@@ -1,0 +1,136 @@
+.navbar {
+    position: relative;
+    z-index: 200;
+    padding: 0;
+
+    &-navigation {
+        display: flex;
+
+      &-left {
+        width: 50vw;
+        height: 100vh;
+        background-color: $color-dark;
+        position: fixed;
+        left: -50vw;
+        transition: left .8s cubic-bezier(1, 0, 0, 1);
+        .right-border {
+          margin-left: 75%;
+          width: 25%;
+          border-top: 3px solid $color-primary;
+        }
+          @include response(md) {
+             display: none;
+           }
+        .left-img {
+            width: 50%;
+            position: absolute;
+            box-shadow: 0 15px 60px rgba($color-black, .4);
+            opacity: .7;
+            @include response(xl) {
+                width: 55%;
+            }
+            @include response(lg) {
+                width: 65%;
+            }
+        }
+        .left-img-1 {
+            top: 15%;
+            left: 15%;
+            @include response(lg) {
+                left: 5%;
+            }
+        }
+        .left-img-2 {
+          top: 35%;
+          left: 25%;
+          @include response(lg) {
+              left: 15%;
+          }
+        }
+        .left-img-3 {
+          top: 55%;
+          left: 35%;
+          @include response(lg) {
+              left: 25%;
+          }
+        }
+      }
+
+      &-right {
+          width: 50vw;
+          height: 100vh;
+          position: fixed;
+          right: -50vw;
+          @include flexLayout;
+          transition: right .8s cubic-bezier(1, 0, 0, 1);
+          background-image: url(../images/vegs.png);
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          background-color: $color-dark;
+          @include response(md) {
+              width: 100vw;
+              right: -100vw;
+          }
+          .left-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25%;
+            border-top: 3px solid $color-primary;
+            @include response(md) {
+              display: none;
+            }
+          }
+      }
+
+        .nav-list {
+          // position: absolute;
+            &-item {
+                list-style: none;
+            }
+            &-link {
+                font-family: $font-dancingScript;
+                font-size: 4rem;
+                @include textStyles(capitalize);
+                color: $color-secondary;
+                text-decoration: none;
+                display: block;
+                margin: 1rem;
+                text-align: center;
+                transition: all .5s;
+                @include response(xs) {
+                    font-size: 5.5rem;
+                }
+
+                &:hover {
+                    color: $color-primary;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+    }
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+    left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+    right: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+    transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+    transform: rotateZ(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+    opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+    transform: rotateZ(40deg);
+}

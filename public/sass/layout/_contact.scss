@@ -1,0 +1,97 @@
+/*-- Reservation --*/
+.contact {
+    margin-top: 1rem;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.4);
+
+    .heding {
+      padding: 1rem;
+      margin: 1.5rem 0;
+
+      h2 {
+        color: $color-white;
+        font-size: 4rem;
+        font-family: $font-nunito;
+        @include response(lg) {
+          font-size: 4rem;
+        }
+        @include response(md) {
+          font-size: 3.5rem;
+        }
+        @include response(xs) {
+          font-size: 2.5rem;
+        }
+      }
+
+      p {
+        color: $color-white;
+        font-size: 1.5rem;
+        @include response(xs) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .res-icon {
+      font-size: 2.1rem;
+      margin-top: 0.3rem;
+      color: $color-primary;
+      text-align: center;
+    }
+
+   /* -- Mid-border -- */
+    .mid-border {
+      margin: 1.5rem 0;
+      border-top: 1px solid $color-primary;
+    }
+  /* -- Customer Details -- */
+    .det-m {margin-top: 1rem;}
+    .user-details {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      width: 100%;
+      border: 1px solid $color-primary;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $color-white;
+
+      .icon {
+        font-size: 1.9rem;
+        margin: 0.3rem 1rem 0 0;
+        color: $color-primary;
+        text-align: center;
+      }
+      input, textarea {
+          width: 95%;
+          font-size: 1.5rem;
+          color: $color-secondary;
+          background-color: $color-dark;
+          border: none;
+          outline: none;
+          focus: none;
+        }
+    }
+
+    /*-- Submit button --*/
+
+      .res-btn {
+        margin-top: 1.5rem;
+          padding: 1rem 3rem;
+          font-family: $font-josefinSans;
+          font-size: 2rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: $color-primary;
+          background-color: transparent;
+          border: 1px solid $color-primary;
+          outline: none;
+          cursor: pointer;
+          transition: all .4s;
+
+          &:hover {
+              background-color: $color-primary;
+              color: $color-dark;
+              text-decoration: none;
+          }
+      }
+
+  }

@@ -1,0 +1,19 @@
+/*--- VARIABLES AND MIXINS ---*/
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/base";
+
+/*--- COMPONENTS ---*/
+@import "components/ham_menu";
+@import "components/logo";
+
+
+/*--- LAYOUT ---*/
+@import "layout/menu";
+@import "layout/home";
+@import "layout/gallery";
+@import "layout/about";
+@import "layout/reservation";
+@import "layout/services";
+@import "layout/contact";
+@import "layout/footer";

@@ -1,0 +1,127 @@
+/*-- Header --*/
+.header {
+    height: 100vh;
+    background: linear-gradient(rgba($color-black, .8), rgba($color-black, .6)),url(../images/bg.jpeg) center no-repeat;
+    background-size: cover;
+    .h-mar {margin-top: 2rem;
+      @include response(lg) {
+        margin-top: 4rem;
+      }
+      @include response(md) {
+        margin-top: 3rem;
+      }
+      @include response(sm) {
+        margin-top: 5rem;
+      }
+      @include response(xs) {
+        margin-top: 12rem;
+      }
+    }
+    .a-mar {margin-top: 6rem;}
+    .b-mar {margin-top: 4rem;
+      @include response(lg) {
+        margin-top: 1.5rem
+      }
+      @include response(md) {
+        margin-top: 2rem;
+      }
+      @include response(sm) {
+        margin-top: 1rem;
+      }
+      @include response(xs) {
+        margin-top: 4rem;
+      }
+    }
+    .c-mar {margin-top: 2rem;
+      @include response(lg) {
+        margin-top: 1rem;
+      }
+      @include response(sm) {
+        margin-top: 1rem;
+      }
+    }
+
+    .main-name {
+        font-family: $font-nunito;
+        font-size: 5rem;
+        padding-top: 2rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: $color-secondary;
+        @include response(lg) {
+          font-size: 4rem;
+          padding-top: 0;
+        }
+        @include response(md) {
+          font-size: 3rem;
+        }
+        @include response(sm) {
+          font-size: 2.5rem;
+        }
+    }
+
+    .sub-name {
+        font-family: $font-josefinSans;
+        font-size: 2.5rem;
+        color: $color-secondary;
+        font-weight: 300;
+        letter-spacing: 2px;
+        @include response(sm) {
+          font-size: 2rem;
+        }
+    }
+
+    .main-heading {
+        font-family: $font-dancingScript;
+        font-size: 8rem;
+        font-weight: 300;
+        color: $color-primary;
+        @include response(lg) {
+          font-size: 7rem;
+        }
+        @include response(md) {
+          font-size: 6rem;
+        }
+        @include response(sm) {
+          font-size: 5.5rem;
+        }
+    }
+
+    .sub-heading {
+        font-family: $font-josefinSans;
+        font-size: 5rem;
+        color: $color-secondary;
+        @include response(lg) {
+          font-size: 3rem;
+        }
+        @include response(md) {
+          font-size: 3rem;
+        }
+        @include response(sm) {
+          font-size: 2.5rem;
+        }
+    }
+
+    .main-btn {
+        padding: 2rem;
+        font-family: $font-josefinSans;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $color-primary;
+        background-color: transparent;
+        border: 1px solid $color-primary;
+        outline: none;
+        cursor: pointer;
+        transition: all .4s;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-dark;
+            text-decoration: none;
+        }
+        @include response(lg) {
+          padding: 1rem;
+        }
+    }
+}

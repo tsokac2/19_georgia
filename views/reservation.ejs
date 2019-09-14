@@ -1,0 +1,125 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid">
+  <div class="col res p-0">
+    <!-- Logo - lines - Home Link -->
+    <div class="row justify-content-center">
+      <div class="col-4 col-sm-3 line-wrap">
+          <div class="row justify-align-start">
+              <div class="col line"></div>
+          </div>
+      </div>
+
+      <div class="col-3 col-sm-2">
+        <div class="wrap-res">
+          <a href="/about" class="logo-res"><i class="fas fa-utensils details-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="col-4 col-sm-3 line-wrap">
+          <div class="row justify-align-start">
+              <div class="col line"></div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Reservation From -->
+    <div class="row justify-content-center">
+      <div class="col-10 col-sm-8 text-center res-reservation-wrap">
+        <!-- Title -->
+        <div class="row justify-content-center">
+          <div class="col res-heding">
+            <h2>I want to reserve a table</h2>
+            <h3>at restaurant <span>"GEORGIA"</span></h3>
+          </div>
+        </div>
+
+
+        <form class="mar-bottom" action="" method="">
+        <!-- Date and time -->
+        <div class="row justify-content-around res-date-time-wrap">
+          <div class="col-6 col-sm-6 p-0">
+            <div class="res-input-container">
+              <i class="far fa-calendar-alt res-icon"></i>
+              <input class="input-field" type="date" value="2019-09-10"
+                placeholder="Username" name="usrnm">
+            </div>
+          </div>
+          <div class="col-4 col-sm-4 p-0">
+            <div class="res-input-container">
+              <i class="far fa-clock res-icon"></i>
+              <input class="input-field" type="time" value="10:00"
+                min="10:00" max="22:00" placeholder="Username" name="usrnm">
+            </div>
+          </div>
+        </div>
+
+        <!-- Smoking - People -->
+        <div class="row justify-content-around res-smoke-people-wrap">
+         <div class="col-6 col-sm-6">
+           <div class="row justify-content-start">
+            <div class="col-6 switch-field">
+              <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
+              <label for="radio-one">non-smoking</label>
+            </div>
+            <div class="col-6 switch-field">
+             <input type="radio" id="radio-two" name="switch-one" value="no" />
+             <label for="radio-two">smoking</label>
+             </div>
+            </div>
+          </div>
+          <div class="col-4 col-sm-4 p-0">
+           <div class="res-people">
+            <i class="fas fa-user-friends icon"></i>
+             people
+             <input type="number" value="2" min="1" max="20" name="usrnm">
+           </div>
+          </div>
+         </div>
+
+         <!-- Details -->
+         <div class="row justify-content-center">
+           <div class="col-11 mid-border"></div>
+         </div>
+         <div class="row justify-content-center">
+           <!-- -->
+           <div class="col-11 p-0">
+             <div class="user-details">
+               <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Your name" name="usrnm">
+             </div>
+           </div>
+           <!-- -->
+           <div class="col-11 p-0 det-m">
+             <div class="user-details">
+               <i class="far fa-paper-plane icon"></i>
+                <input type="email" placeholder="Email address" name="usrnm">
+             </div>
+           </div>
+           <!-- -->
+           <div class="col-11 p-0 det-m">
+             <div class="user-details">
+               <i class="fas fa-phone icon"></i>
+               <input type="text" placeholder="Phone number" name="usrnm">
+             </div>
+           </div>
+
+           <div class="col-11 p-0 det-m mb-4">
+             <div class="user-details">
+               <i class="far fa-clipboard icon"></i>
+               <input type="textarea" placeholder="Note - not required" row="3" name="usrnm">
+             </div>
+           </div>
+         </div>
+
+         <div class="row justify-content-center">
+           <div class="col-10 col-sm-8 text-center res-btn-wrap">
+             <button type="button" name="button" class="res-btn">Reserve a table</button>
+           </div>
+         </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>
