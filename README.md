@@ -1,4 +1,4 @@
-# !["Georgia"](https://res-georgia.herokuapp.com/)
+# ["Georgia"](https://res-georgia.herokuapp.com/)
 
 ### PROJECT OBJECTIVE
 Enforce cutting-edge layout technologies Flexbox and CSS Grid into real-world projects.
