@@ -12,9 +12,9 @@
 ****
 # OBJECTIVE
 
-Usingcombination of advance CSS Grid by Node.js partials implementation in a single project scop
+Summing up top development skills set in to "live" web-base-app/site.
 
-Project is ready for real-world adjustment and expanding of layout and sub-pages.
+Project is fully responsive for any device/screen and ready for hospitality business implementation and branding.
 
 Fully responsive to any device/screen and ready for property business implementation and branding.
 
