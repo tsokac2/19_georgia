@@ -2,7 +2,7 @@
 
 ![Website Main Mockup](https://github.com/tsokac2/19_georgia/blob/main/public/images/georgia.jpg)
 
-# ["Georgia"](https://res-natours.herokuapp.com/)
+# ["Georgia"](https://res-georgia.herokuapp.com/)
 
 ## Contents
 * **[Objective](#OBJECTIVE)**
@@ -106,7 +106,7 @@ Fully responsive to any device/screen and ready for property business implementa
 
 # DEPLOYMENT
 
-**[PROJECT LINK](https://newirishlife.herokuapp.com/)**
+**[PROJECT LINK](https://res-georgia.herokuapp.com/)**
 
 ### LOCAL PROJECT SETUP:
 * Create a new repository on **[GitHub](https://github.com)**
